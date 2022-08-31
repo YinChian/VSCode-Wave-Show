@@ -1,0 +1,68 @@
+# Compile of tb_test.v was successful.
+# Compile of test.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_test.v was successful.
+# Compile of test.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of tb_test.v was successful.
+# Compile of test.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of test.v was successful.
+vsim -voptargs=+acc work.tb_test
+# vsim -voptargs="+acc" work.tb_test 
+# Start time: 04:29:50 on Sep 01,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: Z:\TMP\VSC+ModelSim\tb_test.v(7): Module 'u0' is not defined.
+#  For instance 'test' at path 'tb_test'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 04:29:50 on Sep 01,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 8
+# Compile of tb_test.v failed with 3 errors.
+# Compile of tb_test.v was successful.
+# Compile of tb_test.v was successful.
+# Compile of test.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of tb_test.v was successful.
+# Compile of test.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of tb_test.v was successful.
+# Compile of test.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_test
+# vsim -voptargs="+acc" work.tb_test 
+# Start time: 04:31:03 on Sep 01,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_test(fast)
+# Loading work.test(fast)
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_test(fast)
+# Loading work.test(fast)
+add wave -position end  sim:/tb_test/clk
+add wave -position end  sim:/tb_test/rst_n
+add wave -position end  sim:/tb_test/cnt
+run -all
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_test(fast)
+# Loading work.test(fast)
+# Compile of tb_test.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_test(fast)
+# Loading work.test(fast)
+run
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_test(fast)
+# Loading work.test(fast)
+run -all
+# ** Note: $finish    : Z:/TMP/VSC+ModelSim/tb_test.v(17)
+#    Time: 110 ns  Iteration: 0  Instance: /tb_test
+# 1
+# Break in Module tb_test at Z:/TMP/VSC+ModelSim/tb_test.v line 17

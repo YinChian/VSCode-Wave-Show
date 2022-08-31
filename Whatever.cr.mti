@@ -1,0 +1,8 @@
+Z:/TMP/VSC+ModelSim/test.v {1 {vlog -work work -vopt -stats=none {Z:\TMP\VSC+ModelSim\test.v}
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}}
